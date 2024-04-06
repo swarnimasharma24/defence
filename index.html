@@ -3,61 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Registration Form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landing.css"> 
 </head>
 <body>
     <div class="container">
-        <h2>Startup Registration Form</h2>
-        <form action="#">
-            <div class="input-group">
-                <label for="startupName">Startup Name:</label>
-                <input type="text" id="startupName" name="startupName" required>
-                <i class="fas fa-user"></i>
-            </div>
-                                 
-            <div class="input-group">
-                <label for="website">Website Link:</label>
-                <input type="url" id="website" name="website" required>
-                <i class="fas fa-globe"></i>
-            </div>
-            
-            <div class="input-group">
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
-                    <option value="" disabled selected>Select Category</option>
-                    <option value="AR/VR/MR/XR">AR/VR/MR/XR</option>
-                    <option value="IoT">IoT</option>
-                    <option value="AI/ML">AI/ML</option>
-                    <option value="Robotics">Robotics</option>
-                    <option value="Drone">Drone</option>
-                    <option value="Cybersecurity">Cybersecurity</option>
-                    <option value="GPS">GPS</option>
-                </select>
-                <i class="fas fa-list-alt"></i>
-            </div>
-            
-            <div class="input-group">
-                <label for="description">Product Description:</label>
-                <textarea id="description" name="description" required></textarea>
-                <i class="fas fa-pencil-alt"></i>
-            </div>
-            
-            <div class="input-group">
-                <label for="upload">Upload Documents:</label>
-                <input type="file" id="upload" name="upload" accept=".pdf,.doc,.docx">
-                <i class="fas fa-upload"></i>
-            </div>
-            
-            <div class="input-group">
-                <label for="achievements">Achievements/Certificates:</label>
-                <input type="file" id="achievements" name="achievements" accept=".pdf,.jpg,.png">
-                <i class="fas fa-certificate"></i>
-            </div>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <!-- Admin Section -->
+        <div class="section admin-section">
+            <h2>Startup Section</h2>
+            <p>This section is for admin-related content.</p>
+            <a href="" class="learn-more-button">startup</a> 
+        </div>
+
+        <!-- Startup Section -->
+        <div class="section startup-section">
+            <h2>Admin Section</h2>
+            <p>This section is for startup-related content.</p>
+            <a href="../startbootstrap-sb-admin-2-gh-pages/index.html" class="learn-more-button">Admin</a>
+        </div>
     </div>
 </body>
 </html>
