@@ -1,0 +1,64 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-image: linear-gradient(to bottom right, #ebeff0, #e6f7ff); /* Light blue gradient */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Shining shading effect */
+}
+
+/* Admin Section specific styles */
+.admin-section {
+    margin-right: 20px; /* Adds space between sections */
+}
+
+.admin-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Startup Section specific styles */
+.startup-section {
+}
+
+.startup-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Learn More button specific styles */
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Text color for sections */
+.admin-section h2,
+.startup-section h2 {
+    color: black; /* Set text color to black */
+}

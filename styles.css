@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #262626;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="url"],
+textarea,
+select,
+input[type="file"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="file"] {
+    width: calc(100% - 60px);
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus,
+input[type="file"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.input-group:hover i {
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    color: #fff;
+    cursor: pointer;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+select:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+option {
+    background-color: #333;
+}

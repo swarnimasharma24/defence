@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #investors-container {
+            margin-bottom: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="process_form.php" method="post">
+        <label for="location">Location (1-29):</label>
+        <input type="number" id="location" name="location" min="1" max="29" required>
+
+        <label for="entry_valuation">Entry Valuation:</label>
+        <input type="text" id="entry_valuation" name="entry_valuation" required>
+
+        <label for="sector_name">Sector Name:</label>
+        <input type="text" id="sector_name" name="sector_name" required>
+
+        <label>Investors:</label>
+        <div id="investors-container">
+            <input type="text" name="investors[]" required>
+        </div>
+        <button type="button" onclick="addInvestor()">Add Investor</button>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function addInvestor() {
+            const investorsContainer = document.getElementById('investors-container');
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'investors[]';
+            input.placeholder = 'Enter Investor Name';
+            investorsContainer.appendChild(input);
+        }
+    </script>
+
+</body>
+</html>
